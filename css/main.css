@@ -241,11 +241,54 @@ html{
 }
 
 .n2 .panel > *{
-    margin: 30px 40px;
+    margin: 0  40px;
 }
 
-.n2 .panel title{
+.n2 .panel .title{
+    margin-top: 30px;
     font-weight: bold;
+}
+
+.n2 .left .website{
+    height: 92px;
+    font-size: 16px;
+    border-bottom: 1px solid #EBEBEB;
+    clear: both;
+}
+
+.n2 .left .website > * {
+    display: inline-block;
+    float: left;
+    line-height: 95px;
+}
+
+.n2 .left .website .logo{
+    width: 45px;
+    color: black;
+    font-size: 3em;
+    margin-right: 20px;
+}
+
+.n2 .left .website .logo img{
+    height: 45px;
+    width: 45px;
+}
+
+.n2 .left .website .address{
+    width: 100px;
+    color: #9B9B9B;
+    margin-right: 62px;
+}
+
+.n2 .left .website .num{
+    width: 50px;
+    font-size: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.n2 .left .website .percent::before{
+    margin-right: 3px;
 }
 
 /* panel */
