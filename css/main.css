@@ -19,7 +19,7 @@ html{
 
 .container{
     width:100%;
-    max-width: 940px;
+    width: 940px;
     height: 70px;
     margin: 0 auto;
 }
@@ -291,6 +291,75 @@ html{
     margin-right: 3px;
 }
 
+/* right */
+.n2 .right .order{
+    height: 100px;
+    font-size: 16px;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 8px 0;
+    clear: both;
+}
+
+.n2 .right .order > * {
+    display: inline-block;
+    float: left;
+}
+
+.n2 .right .order .pic{
+    margin-right: 21px;
+}
+
+.n2 .right .order .pic img{
+    width: 100px;
+    height: 100px;
+}
+
+.n2 .right .order .content{
+    width:calc(100% - 150px - 50px);
+    margin-right: 25px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.n2 .right .order .content .item{
+    margin-top: 11px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.n2 .right .order .content > * + *{
+    color: #9B9B9B; 
+    margin-top: 8px;
+}
+
+.n2 .right .order .content .date::before{
+    margin-right:7px;
+    width: 7px;
+    height: 7px;
+}
+
+.n2 .right .order .content .person::before{
+    margin-right:14px;
+    width: 7px;
+    height: 7px;
+}
+
+.n2 .right .order .total{
+    width: 50px;
+    text-align: right;
+}
+
+.n2 .right .order .total .tilte{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.n2 .right .order .total .num{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+}
 /* panel */
 
 .panel{
