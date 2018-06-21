@@ -1,0 +1,261 @@
+@import "reset.css";
+@import "fontawesome-all.css";
+
+html{
+    background-color: #F2F2F2;
+}
+
+.green{
+    color: #7ED321;
+}
+
+.red{
+    color: #D0021B;
+}
+
+.blue{
+    color: #4A90E2;
+}
+
+.container{
+    width:100%;
+    max-width: 940px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+#header{
+    width: 100%;
+    background-color: black;
+}
+
+#header .container{
+    line-height: 70px;
+}
+
+
+
+.container > div{
+    display: inline-block;
+    float: left;
+}
+
+.logo{
+    font-size: 24px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+.admin{
+    font-size: 16px;
+    width: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: right;  
+}
+
+.menu{
+    width: calc(100% - 150px - 60px);
+}
+
+
+.menu > a{
+    position: relative;
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #9B9B9B; 
+    padding: 0 16px;
+}
+
+.menu > a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 0; 
+}
+
+.menu > a.active{
+    color: #ffffff; 
+}
+
+.menu > a.active::after{
+    opacity: 100; 
+}
+
+.menu > a:hover{
+    color: #ffffff;
+}
+
+.menu > a:hover::after{
+    opacity: 100; 
+}
+
+/* main */
+
+#main{
+    display: inline-block;
+    width: 100%;
+}
+
+.info{
+    width: 100%;
+    clear: both;
+    margin-top:30px; 
+}
+
+.info > *{
+    float: left;
+    display: inline-block;
+    height: 32px;
+    width: 50%;
+    line-height: 32px;
+}
+
+.info .left{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info .right{
+    clear: right;
+}
+
+.info .right > * {
+    display: inline-block;
+    float: right;
+}
+
+.info .right span{
+    font-size: 16px;
+    color:#9B9B9B;
+}
+
+.info .right .dates{
+    clear: left;
+}
+
+.info .right .dates > *{
+    display: inline-block;
+    float: left;
+    line-height: 32px;
+}
+
+.info .right i{
+    height: 32px;
+    width: 16px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+}
+
+.info .right .unit{
+    margin-left: 16px;
+}
+
+/* n3 */
+.n3{
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    margin-top:20px;
+    text-align: center;
+}
+
+.n3 > * {
+    display: inline-block;
+    float: left;
+    width: calc((100% - 20px * 2 ) / 3);
+    height: 138px;
+}
+
+.n3 > * + * {
+    margin-left: 20px;
+}
+
+.n3 .panel > *{
+    display: inline-block;
+    width: 100%;
+}
+
+.n3 .panel div{
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+
+.n3 .panel div::before{
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.n3 .panel b{
+    font-size: 36px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 16px;
+}
+
+/* n1 */
+.n1{
+    clear: both;
+    width: 100%;    
+    margin-top: 18px;
+}
+
+.n1 > * {
+    width: 100%;
+    height: 406px;
+}
+
+/* n2 */
+.n2{
+    clear: both;
+    width: 100%;    
+    margin-top: 20px;
+}
+
+.n2 > * {
+    display: inline-block;
+    float: left;
+    width: calc((100% - 20px) / 2);
+    height: 456px;
+}
+
+.n2 > * + * {
+    margin-left: 20px;
+}
+
+.n2 .panel{
+    font-size: 24px;
+}
+
+.n2 .panel > *{
+    margin: 30px 40px;
+}
+
+.n2 .panel title{
+    font-weight: bold;
+}
+
+/* panel */
+
+.panel{
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px 5px #EBEBEB;
+    border-radius: 3px;
+}
+
+
+
